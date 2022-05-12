@@ -16,31 +16,31 @@
  //Binary tree search method
 
 static int binarySearch(int[] binaryTree, int left, int right, int itemToSearch)
-{
-    if (right >= left)
-    {
-        //Find the middle of tree
-        int mid = left + (right - left) / 2;
+        {
+            if (right >= left)
+            {
+                //Find the middle of tree
+                int mid = left + (right - left) / 2;
 
-        // If the element is present at the
-        // middle itself
-        if (binaryTree[mid] == itemToSearch)
-            return mid;
+                // If the element is present at the
+                // middle  then will return middle 
+                if (binaryTree[mid] == itemToSearch)
+                    return mid;
 
-        // If element is smaller than mid, then
-        // it can only be present in left subarray
-        if (binaryTree[mid] > itemToSearch)
-            return binarySearch(binaryTree, left, mid - 1, itemToSearch);
+                // If element is smaller than mid, then
+                // it will  only be present in left side of tree
+                if (binaryTree[mid] > itemToSearch)
+                    return binarySearch(binaryTree, left, mid - 1, itemToSearch);
 
-        // Else the element can only be present
-        // in right subarray
-        return binarySearch(binaryTree, mid + 1, right, itemToSearch);
-    }
+                // On other cases element will be  present
+                // in right side of given tree
+                return binarySearch(binaryTree, mid + 1, right, itemToSearch);
+            }
 
-    // We reach here when element is not present
-    // in array
-    return -1;
-}
+            // We will return negative value when searchItem will not be found at tree
+            return -1;
+        }
+
 
 ```
 
