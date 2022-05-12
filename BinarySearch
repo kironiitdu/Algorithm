@@ -1,9 +1,6 @@
-
-
 ## Method For Binary Search using Recursive Function
 
-```markdown
-    static int binarySearch(int[] binaryTree, int left, int right, int itemToSearch)
+static int binarySearch(int[] binaryTree, int left, int right, int itemToSearch)
         {
             if (right >= left)
             {
@@ -28,11 +25,13 @@
             // We will return negative value when searchItem will not be found at tree
             return -1;
         }
-```
+
+
+
+
 ## Main Method Implementation
 
-```markdown
-          //Binary Search Test 2022-05-12
+            //Binary Search Test 2022-05-12
 
             int[] binaryTree = { 2, 3, 4, 10, 50,70};
             //Calculating the lenth of tree
@@ -46,6 +45,4 @@
             if (result == -1)
                 Console.WriteLine("Search item not present");
             else
-                Console.WriteLine("Search item  found at index of "
-                                  + result);
-```
+                Console.WriteLine("Search item  found at index of "+ result);
