@@ -62,7 +62,7 @@ if (result == -1)
     Console.WriteLine("Search item not present");
 else
     Console.WriteLine("Search item  found at index of " + result);
-Console.ReadLine();
+    Console.ReadLine();
 ```
 ## Output
 
