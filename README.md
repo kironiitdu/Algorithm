@@ -68,3 +68,5 @@ else
 
 
 <img src="https://i.stack.imgur.com/tPZXF.gif" alt="user avatar" width="650" height="450" class="bar-sm bar-md d-block">  
+
+I hope it would help to understand how binary serach works. Thanks
